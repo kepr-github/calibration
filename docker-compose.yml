@@ -1,0 +1,10 @@
+version: '3'
+services:
+  calibration:
+    restart: always
+    build: .
+    container_name: 'calibration'
+    working_dir: '/root/'
+    tty: true
+    volumes:
+      - ./app:/root/app
